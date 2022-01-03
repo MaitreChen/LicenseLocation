@@ -88,13 +88,14 @@ Finally，we will see the windows of  liscense plate!
 
 **Tips:**You can adjust the parameters to observe the positioning effect.
 
----
+
 
 ## Welfare
 
 I integrated "segment.py" with "locate.py", that called "locateANDsegment.py".
 
 At the same time,I encapsulated every step into a function for you to check!
+
 
 
 ## Write at the end
