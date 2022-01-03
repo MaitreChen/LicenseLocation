@@ -25,5 +25,5 @@ The second window shows the characters of the license plate segmentation. If you
 3.Since only one dividing line needs to be located between the characters, the difference method is used here to remove the continuous lines: all continuous values with a difference less than D are set to the first value in the range, and then the duplicates are removed.
 4.Through the third step, we can successfully cut the characters, but there is an annoying separator. I used a special judgment. Traverse the lines, extract the ROI of each part, display and save characters through formatting control.
 
-Last, since it is the first time for me to work on a project, I don't have much experience. If there is any unreasonable description, please correct me.
+**Last**, since it is the first time for me to work on a project, I don't have much experience. If there is any unreasonable description, please correct me.
 Thank you!!
