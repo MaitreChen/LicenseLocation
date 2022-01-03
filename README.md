@@ -11,7 +11,7 @@ Now,here is something to tell you:
 
 **First**,the "test.jpg" is the original image,and the "img.jpg" is a picture that i preprocessed.Among them,I used OTSU and morphological operations.
 
-**Second**,when you run "segment.py",you can see two windows as follow:
+**Second**,when you run "segment.py",you can see two windows as follow，also every character will be saved in your directory.
 
 ![image](https://user-images.githubusercontent.com/76271045/147907507-0ea9bad0-ca20-499a-acd5-294fcc067569.png)
 ![image](https://user-images.githubusercontent.com/76271045/147907606-543f6e1b-bd84-49d4-863b-42b4b9b14efa.png)
@@ -26,4 +26,4 @@ The second window shows the characters of the license plate segmentation. If you
 4.Through the third step, we can successfully cut the characters, but there is an annoying separator. I used a special judgment. Traverse the lines, extract the ROI of each part, display and save characters through formatting control.
 
 Last, since it is the first time for me to work on a project, I don't have much experience. If there is any unreasonable description, please correct me.
-Thank you!
+Thank you!!
