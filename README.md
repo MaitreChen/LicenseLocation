@@ -18,7 +18,12 @@ Now,here is something to tell you:
 
 The second window shows the characters of the license plate segmentation. If you want to  display each character separately, you can modify my code to achieve.
 
-Thirdly, I will describe the algorithm idea.
+**Thirdly**, I will describe the algorithm idea.
 
 1.Image preprocessing,including gray conversion, threshold processing and orphological operation.(Of course, I also made a clever treatment to manually remove information that has nothing to do with characters.If there is no such operation, perhaps all the subsequent efforts will be wasted)
-2.
+2.Traverse the picture by column, if the sum of a certain column of pixels is zero, then it can be used as the position of the dividing line.
+3.Since only one dividing line needs to be located between the characters, the difference method is used here to remove the continuous lines: all continuous values with a difference less than D are set to the first value in the range, and then the duplicates are removed.
+4.Through the third step, we can successfully cut the characters, but there is an annoying separator. I used a special judgment. Traverse the lines, extract the ROI of each part, display and save characters through formatting control.
+
+Last, since it is the first time for me to work on a project, I don't have much experience. If there is any unreasonable description, please correct me.
+Thank you!
