@@ -20,6 +20,8 @@ You can clone this project to local and run it.
 
 *The second window shows the characters of the license plate segmentation. If you want to  display each character separately, you can modify my code to achieve.*
 
+
+
 #### Thirdly, I will describe the algorithm idea.😏
 
 1.**Image preprocessing**,including gray conversion, threshold processing and orphological operation.(Of course, I also made a clever treatment to manually remove information that has nothing to do with characters.If there is no such operation, perhaps all the subsequent efforts will be wasted)
