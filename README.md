@@ -62,7 +62,7 @@ What's the most important thing is to find the correct ratio of the liscense.Thr
 
 ## Result
 
-when you run "locate.py", you will see windos as follow:
+When you run "locate.py", you will see windos as follow:
 
 ![image-20220103175207359](https://user-images.githubusercontent.com/76271045/147918727-ca84591e-eb9b-4801-b356-cc557e485aa0.png)
 
@@ -71,15 +71,18 @@ when you run "locate.py", you will see windos as follow:
 
 When you run "locateANDsegment.py", you will see results as follow:
 
-![image-20220103175824434](C:\Users\19749\AppData\Roaming\Typora\typora-user-images\image-20220103175824434.png)
+![image-20220103175824434](https://user-images.githubusercontent.com/76271045/147918795-0c14d3c9-58df-4108-a20d-aaf1634fa3fc.png)
 
-![image-20220103175839575](C:\Users\19749\AppData\Roaming\Typora\typora-user-images\image-20220103175839575.png)
+![image-20220103175839575](https://user-images.githubusercontent.com/76271045/147918814-f294b029-d142-40e0-a74d-9131c1add751.png)
+
+
 
 <u>A character will appear every time you enter!</u>
 
 Finally，we will see the windows of  liscense plate!
 
-![image-20220103180053089](C:\Users\19749\AppData\Roaming\Typora\typora-user-images\image-20220103180053089.png)
+![image-20220103180053089](https://user-images.githubusercontent.com/76271045/147918831-e27bb3a2-f750-4248-8fde-36abc32f3797.png)
+
 
 
 
@@ -93,7 +96,6 @@ I integrated "segment.py" with "locate.py", that called "locateANDsegment.py".
 
 At the same time,I encapsulated every step into a function for you to check!
 
----
 
 ## Write at the end
 
