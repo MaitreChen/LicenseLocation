@@ -64,7 +64,8 @@ What's the most important thing is to find the correct ratio of the liscense.Thr
 
 when you run "locate.py", you will see windos as follow:
 
-![image-20220103175207359](C:\Users\19749\AppData\Roaming\Typora\typora-user-images\image-20220103175207359.png)
+![image-20220103175207359](https://user-images.githubusercontent.com/76271045/147918727-ca84591e-eb9b-4801-b356-cc557e485aa0.png)
+
 
 
 
