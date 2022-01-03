@@ -22,7 +22,7 @@ You can clone this project to local and run it.
 
 
 
-#### Thirdly, I will describe the algorithm idea.😏
+#### Thirdly, I will describe the algorithm idea of segmentation.😏
 
 1.**Image preprocessing**,including gray conversion, threshold processing and orphological operation.(Of course, I also made a clever treatment to manually remove information that has nothing to do with characters.If there is no such operation, perhaps all the subsequent efforts will be wasted)
 
@@ -32,5 +32,69 @@ You can clone this project to local and run it.
 
 4.Through the third step, we can successfully cut the characters, but there is an annoying separator. I used a special judgment. Traverse the lines, extract the ROI of each part, display and save characters through formatting control.
 
-**Last**, since it is the first time for me to work on a project, I don't have much experience. If there is any unreasonable description, please correct me.
+
+
+---
+
+**Tips:**   The above is the character segmentation, and the next is the positioning of the license plate.😛😛
+
+Are you ready?
+
+
+
+## Algorithm idea
+
+### 1.Image preprocessing
+
+Use low-pass filtering to remove noise，OTSU thresholding，and Canny to edge detecting
+
+### 2.Morphological operations
+
+Remove some black holes in the characters and remove noise.
+
+### 3.FindContours  and draw
+
+What's the most important thing is to find the correct ratio of the liscense.Through testing here, I found that the ratio of 3.5 to 4 is the best.(<u>According to the information available, in my country, the size of the license plate of a small car is **440mm×140mm**</u>)
+
+---
+
+
+
+## Result
+
+when you run "locate.py", you will see windos as follow:
+
+![image-20220103175207359](C:\Users\19749\AppData\Roaming\Typora\typora-user-images\image-20220103175207359.png)
+
+
+
+When you run "locateANDsegment.py", you will see results as follow:
+
+![image-20220103175824434](C:\Users\19749\AppData\Roaming\Typora\typora-user-images\image-20220103175824434.png)
+
+![image-20220103175839575](C:\Users\19749\AppData\Roaming\Typora\typora-user-images\image-20220103175839575.png)
+
+<u>A character will appear every time you enter!</u>
+
+Finally，we will see the windows of  liscense plate!
+
+![image-20220103180053089](C:\Users\19749\AppData\Roaming\Typora\typora-user-images\image-20220103180053089.png)
+
+
+
+**Tips:**You can adjust the parameters to observe the positioning effect.
+
+---
+
+## Welfare
+
+I integrated "segment.py" with "locate.py", that called "locateANDsegment.py".
+
+At the same time,I encapsulated every step into a function for you to check!
+
+---
+
+## Write at the end
+
+Since it is the first time for me to work on a project, I don't have much experience. If there is any unreasonable description, please correct me.
 Thank you!!😂😂
