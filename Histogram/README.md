@@ -4,11 +4,12 @@ At the time of writing, I used the "src", that is a 6X6 array to realize the pro
 
 Now, I imported a test image. When you run the "source.py",you can find two windows like this:
 
-![image-20220114165837554](C:\Users\19749\AppData\Roaming\Typora\typora-user-images\image-20220114165837554.png)
+![image-20220114165837554](https://user-images.githubusercontent.com/76271045/149489556-270011d8-dea6-4ed4-b1aa-f367993541cf.png)
 
  <This is the drawing result of calling the function directly>
 
-![image-20220114165849332](C:\Users\19749\AppData\Roaming\Typora\typora-user-images\image-20220114165849332.png)
+![image-20220114165849332](https://user-images.githubusercontent.com/76271045/149489593-8ceac932-cdc0-4169-a4e9-22a8f6a7df54.png)
+
 
 <This is what I did manually.>
 
