@@ -14,7 +14,7 @@ def image_preprocessing(img):
     median_blur = cv.medianBlur(gaussian_blur, ksize=3)
 
     # otsu二值化，边缘检测
-    retval, binary = cv.threshold(median_blur, 0, 255, cv.THRESH_OTSU)
+    ret, binary = cv.threshold(median_blur, 0, 255, cv.THRESH_OTSU)
     edge = cv.Canny(binary, 200, 250)
 
     # 形态学运算
@@ -48,7 +48,7 @@ def draw_contours(x, y, w, h):
     res = src[y:y + h, x:x + w]  # 作为返回值以便字符的切割
 
     cv.imshow("result", img)
-    cv.imwrite("result.jpg",res)
+    cv.imwrite("res/result.jpg", res)
     cv.waitKey()
 
     return res
@@ -111,7 +111,7 @@ def segment(dst):
 
 
 if __name__ == '__main__':
-    img = cv.imread("License plate.jpg")
+    img = cv.imread("data/license-plate.jpg")
     src = img.copy()
 
     dst1 = image_preprocessing(img)  # 图像预处理

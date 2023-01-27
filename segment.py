@@ -2,23 +2,18 @@ import cv2 as cv
 from skimage import io
 from matplotlib import pyplot as plt
 
-img = io.imread("img.jpg")
+img = io.imread("data/bin_img.jpg")
 
 res = img.copy()
 src = res[45:190, 30:650]
 rows, cols = src.shape[:2]
 
-
 pixel_nums = []
-
 for i in range(cols):
     s = 0
     for j in range(rows):
         s += src[j, i]
-        print (s)
     if s[0] == 0:  # 排除像元皆为零的列
-        if i == 153:  # 去除单一的线条
-            continue
         pixel_nums.append(i)
     s = 0
 
@@ -30,7 +25,6 @@ for j in range(len(pixel_nums) - 1):
 
 sorted_list = list(set(pixel_nums))
 sorted_list.sort(key=pixel_nums.index)
-# print(sorted_list)
 
 num = 1
 for k in range(len(sorted_list) - 1):
@@ -39,14 +33,12 @@ for k in range(len(sorted_list) - 1):
 
     # cv.line(src, (sorted_list[k], 0), (sorted_list[k], cols), (0, 255, 255), 1)  # 绘制分割线以便参考
     dst = src[0:rows, sorted_list[k]:sorted_list[k + 1]]  # 提取每一部分的ROI
-    print(dst.shape)
+
     plt.figure("output")
     plt.subplot(1, len(sorted_list) - 4, num)  # 同屏显示分割的字符
     plt.axis("off")
     plt.imshow(dst)
-    cv.imwrite("char{}.jpg".format(num), dst)
-    # plt.savefig("char{}.jpg".format(num), bbox_inches='tight', pad_inches=0)
-    # plt.title(str(num))  # 为切割后的字符编号
+    cv.imwrite("res/char{}.jpg".format(num), dst)
     num = num + 1
 
 # 显示原图
