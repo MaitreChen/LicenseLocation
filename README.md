@@ -7,7 +7,7 @@ This is my first project!✔
 Actually,this is an assignment from my digital image processing experiment class.
 Through thinking about algorithm ideas and the process of constantly adjusting parameters by myself, I successfully completed this project.
 
-You can clone this project to local and run it.
+You can clone this project and run it.
 
 ## <u>Now,here is something to tell you:</u>
 
@@ -37,7 +37,7 @@ You can clone this project to local and run it.
 
 ---
 
-**Tips:**   The above is the character segmentation, and the next is the positioning of the license plate.😛😛
+Tips:   The above is the character segmentation, and the next is the positioning of the license plate.😛😛
 
 Are you ready?
 
