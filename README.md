@@ -1,5 +1,6 @@
+[![Security Status](https://www.murphysec.com/platform3/v3/badge/1612448969049812992.svg?t=1)](https://www.murphysec.com/accept?code=18595fc71688bb8a5e33d73533679ddf&type=1&from=2&t=2)
 # LicenseLocation
-
+---
 Hi,everyone!❤🧡💛💚💙💜
 
 This is my first project!✔
